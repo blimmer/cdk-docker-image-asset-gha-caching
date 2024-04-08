@@ -1,2 +1,3 @@
-# cdk-docker-image-asset-gha-caching
-Demo repo for caching CDK DockerImageAssets with GitHub Actions
+# CDK `DockerImageAsset` Caching with GitHub Actions
+
+This repo demonstrates how to cache CDK DockerImageAsset builds using GitHub Actions.
