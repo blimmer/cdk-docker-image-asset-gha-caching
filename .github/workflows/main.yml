@@ -38,4 +38,3 @@ jobs:
         run: npx cdk deploy --require-approval never '**'
         env:
           CDK_DEFAULT_ACCOUNT: ${{ secrets.CDK_DEFAULT_ACCOUNT }}
-          CDK_DEFAULT_REGION: us-west-2
