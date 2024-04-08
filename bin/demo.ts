@@ -13,4 +13,9 @@ const app = new App({
   }),
 });
 
-new CachedDockerImageStack(app);
+new CachedDockerImageStack(app, {
+  env: {
+    account: process.env.CDK_DEFAULT_ACCOUNT,
+    region: "us-west-2",
+  },
+});

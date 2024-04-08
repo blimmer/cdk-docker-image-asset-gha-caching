@@ -1,11 +1,11 @@
-import { Stack } from "aws-cdk-lib";
+import { Stack, type StackProps } from "aws-cdk-lib";
 import { DockerImageAsset } from "aws-cdk-lib/aws-ecr-assets";
 import { Construct } from "constructs";
 import { join } from "path";
 
 export class CachedDockerImageStack extends Stack {
-  constructor(scope: Construct) {
-    super(scope, "CachedDockerImageStack");
+  constructor(scope: Construct, props: StackProps) {
+    super(scope, "CachedDockerImageStack", props);
 
     const dockerImage = new DockerImageAsset(this, "DockerImage", {
       directory: join(__dirname, "docker"),
