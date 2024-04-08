@@ -36,3 +36,6 @@ jobs:
         uses: crazy-max/ghaction-github-runtime@v3
       - name: CDK Deploy
         run: npx cdk deploy --require-approval never '**'
+        env:
+          CDK_DEFAULT_ACCOUNT: ${{ secrets.CDK_DEFAULT_ACCOUNT }}
+          CDK_DEFAULT_REGION: us-west-2
